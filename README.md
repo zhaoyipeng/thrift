@@ -162,3 +162,12 @@ To run the cross-language test suite, please run:
 
 This will run a set of tests that use different language clients and
 servers.
+
+
+Notice
+=====
+
+on mac osx, use this command:
+./configure CXXFLAGS="-I/usr/local/Cellar/openssl/1.0.2h_1/include" CFLAGS="-I/usr/local/Cellar/openssl/1.0.2h_1/include" CPPFLAGS="-I/usr/local/Cellar/openssl/1.0.2h_1/include"
+
+
