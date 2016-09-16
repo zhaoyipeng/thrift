@@ -2094,7 +2094,7 @@ void t_php_generator::generate_deserialize_set_element(ofstream& out, t_set* tse
 
   generate_deserialize_field(out, &felem);
 
-  indent(out) << "if (is_scalar($" << elem << ")) {" << endl;
+  indent(out) << "if (!is_scalar($" << elem << ")) {" << endl;
   indent(out) << "  $" << prefix << "[$" << elem << "] = true;" << endl;
   indent(out) << "} else {" << endl;
   indent(out) << "  $" << prefix << " []= $" << elem << ";" << endl;
